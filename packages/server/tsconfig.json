@@ -1,0 +1,23 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "baseUrl": "../",
+    "paths": {
+      "server/*": [""],
+      "parabol-client/*": ["client/*"],
+      "parabol-server/*": [""],
+      "~/*": ["client/*"]
+    },
+    "lib": ["esnext", "dom"]
+  },
+
+  "exclude": [
+    "**/node_modules",
+    "types/githubTypes.ts",
+    "types/linearTypes.ts",
+    "postgres/migrations/**/*",
+    "graphql/intranetSchema/sdl/resolverTypes.ts",
+    "billing/debug.ts"
+  ]
+}

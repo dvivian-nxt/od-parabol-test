@@ -1,0 +1,4 @@
+WAIT=15
+TIMEOUT=6000
+ATTEMPTS=20
+/static/favicon.ico

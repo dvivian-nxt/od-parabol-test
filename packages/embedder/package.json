@@ -1,0 +1,34 @@
+{
+  "name": "parabol-embedder",
+  "version": "10.4.0",
+  "description": "A service that computes embedding vectors from Parabol objects",
+  "author": "Jordan Husney <jordan.husney@gmail.com>",
+  "homepage": "https://github.com/ParabolInc/parabol/tree/master/packages/embedder#readme",
+  "license": "AGPL-3.0-or-later",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ParabolInc/parabol.git"
+  },
+  "scripts": {
+    "precommit": "lint-staged",
+    "lint": "pnpm lint:check --fix .",
+    "lint:check": "eslint .",
+    "prettier": "prettier --config ../../.prettierrc --write \"**/*.{ts,tsx}\"",
+    "prettier:check": "prettier --config ../../.prettierrc --check \"**/*.{ts,tsx}\"",
+    "test": "jest --verbose",
+    "typecheck": "pnpm tsc --noEmit -p tsconfig.json"
+  },
+  "bugs": {
+    "url": "https://github.com/ParabolInc/parabol/issues"
+  },
+  "devDependencies": {
+    "@types/franc": "^5.0.3",
+    "@types/node": "^22.14.0",
+    "openapi-fetch": "^0.10.0"
+  },
+  "dependencies": {
+    "dd-trace": "^5.0.0",
+    "franc-min": "^5.0.0",
+    "redlock": "^5.0.0-beta.2"
+  }
+}

@@ -69,7 +69,7 @@ jobs:
         # pnpm has a bug that resolves git+https to ssh
         run: |
           git config --global url."https://github.com/enahum/redux-offline.git".insteadOf git@github.com:enahum/redux-offline.git
-          pnpm install --frozen-lockfile
+          pnpm install --legacy-peer-deps --frozen-lockfile
 
       - name: Build the DBs
         run: |
